@@ -1,0 +1,8 @@
+site_name: Raspberry Pi Setup Guide
+nav:
+  - Home: index.md
+  - Guide:
+    - 'Device Setup': setup.md
+    - 'Docker Containers': docker.md
+    - 'Cloudflare & DNS': dns.md
+theme: bootstrap4
