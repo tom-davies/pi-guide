@@ -1,10 +1,10 @@
 site_name: Raspberry Pi Setup Guide
+repo_url: https://github.com/tom-davies/pi-guide
 nav:
-  - Home: index.md
   - Guide:
     - 'Device Setup': setup.md
     - 'Security': security.md
     - 'Docker Containers': docker.md
-    - 'Cloudflare & DNS': dns.md
+    #- 'Cloudflare & DNS': dns.md
   - Other Resources: resources.md
 theme: bootstrap4
