@@ -3,6 +3,8 @@ nav:
   - Home: index.md
   - Guide:
     - 'Device Setup': setup.md
+    - 'Security': security.md
     - 'Docker Containers': docker.md
     - 'Cloudflare & DNS': dns.md
+  - Other Resources: resources.md
 theme: bootstrap4
