@@ -1,25 +1,13 @@
 # Raspberry Pi Guide
 
-## Tooling
+## [Device Setup](setup.md)
 
-Run Jekyll/other static on Caddy docker?
+The first steps to getting your Raspberry Pi up and running
 
-## Content
+## [Security](security.md)
 
-+ Set up Pi
-  + SSH (passwords first then keys)
-  + Static LAN IP
-  + Storage on USB
-+ Set up Docker
-  + First container and local access
-  + Re-using ancestry docker YAML
-  + Updating docker containers
-  + Checking logs
-+ Cloudflare & DNS
-  + Static External IP
-  + Cloudflare
-  + Custom URL
+Keeping your Raspberry Pi safe
 
-## References
+## [Docker Containers](docker.md)
 
-+ linuxserver.io
+Using containers to run software on your Raspberry Pi
