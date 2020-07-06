@@ -12,7 +12,7 @@ Download the Raspberry Pi Imager from [raspberrypi.org](https://www.raspberrypi.
 
 ## SSH
 
-To enable a headless setup with SSH access, create a file called ```ssh``` with no file extension at the root of the SD card. The file does not have to contain anything. This file instructs the Raspberry Pi to start an SSH server when it is first powered on.
+To enable a headless setup with SSH access, create a file called `ssh` with no file extension at the root of the SD card. The file does not have to contain anything. This file instructs the Raspberry Pi to start an SSH server when it is first powered on.
 
 Once this SSH Server is running, you will will be able to access the Raspberry Pi from another computer on the same network, from a PowerShell terminal.
 
@@ -22,6 +22,8 @@ Now it's time to start your Raspberry Pi up for the first time! Put the SD card 
 
 Now, to connect to it!
 
-Run ```ssh pi@raspberrypi.local``` in PowerShell, give the password ```raspberry```, and you'll see a prompt that looks like this:
+Run `ssh pi@raspberrypi.local` in PowerShell, give the password `raspberry`, and you'll see a prompt that looks like this:
 
-```pi@raspberrypi: _```
+```
+pi@raspberrypi: _
+```
