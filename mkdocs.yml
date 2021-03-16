@@ -7,4 +7,9 @@ nav:
     - 'Docker Containers': docker.md
     #- 'Cloudflare & DNS': dns.md
   - Other Resources: resources.md
-theme: readthedocs
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: pink
+    accent: purple
