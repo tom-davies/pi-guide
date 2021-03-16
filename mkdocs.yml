@@ -6,7 +6,7 @@ nav:
     - 'Security': security.md
     - 'Docker Containers': docker.md
     #- 'Cloudflare & DNS': dns.md
-  - Other Resources: resources.md
+  #- Other Resources: resources.md
 theme:
   name: material
   palette:
