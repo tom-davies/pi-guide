@@ -11,8 +11,8 @@ Changing your username and password away from the default is one of the first th
 1. Enable the "root" user, using `sudo passwd root`. Choose a secure password for this "root" user.
 2. Log out of the user "pi". `logout`
 3. Log in as root, with the secure password you set.
-4. Rename the user pi to your chosen username. `usermod -l rasp pi`
-5. Change the user's home directory to match the new name. `usermod -m -d /home/rasp rasp`
+4. Rename the user pi to your chosen username. `usermod -l chosen-name pi`
+5. Change the user's home directory to match the new name. `usermod -m -d /home/chosen-name chosen-name`
 6. Logout and back in with the new username.
 7. Change the password to something more secure. `passwd`
 8. Check that your user still has the correct privileges. `sudo apt-get update`
@@ -28,5 +28,5 @@ A further level of security is to authenticate using SSH keys rather than passwo
     2. The `id_ed25519.pub` file is your public key. This is what you share with your Raspberry Pi.
 3. Take a look at your public key `cat ~/.ssh/id_ed25519.pub`
     1. It should look like `ssh-ed25519 <LONG STRING OF RANDOM CHARACTERS> user@host`
-4. Copy your public key to the Raspberry Pi `cat ~/.ssh/id_ed25519.pub | ssh <USERNAME>@<IP-ADDRESS> 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'`
-5. Now try logging in `ssh rasp@raspberrypi.local` and you should connect without a password prompt.
+4. Copy your public key to the Raspberry Pi `cat ~/.ssh/id_ed25519.pub | ssh chosen-name@raspberrypi.local 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'`
+5. Now try logging in `ssh chosen-name@raspberrypi.local` and you should connect without a password prompt.
