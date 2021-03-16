@@ -7,4 +7,4 @@ nav:
     - 'Docker Containers': docker.md
     #- 'Cloudflare & DNS': dns.md
   - Other Resources: resources.md
-theme: bootstrap4
+theme: readthedocs
