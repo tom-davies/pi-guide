@@ -22,11 +22,11 @@ Changing your username and password away from the default is one of the first th
 
 A further level of security is to authenticate using SSH keys rather than passwords. In order to do this, you must generate a key-pair on your local PC, not the Raspberry Pi.
 
-1. Generate the keypair `ssh-keygen`. When prompted, press `Enter` to save it to the default location `(C:\Users\username\.ssh\id_rsa)`.
+1. Generate the keypair using `ssh-keygen -t ed25519`. When prompted, press `Enter` to save it to the default location `(C:\Users\username\.ssh\id_ed25519)`.
 2. Now look inside your `.ssh` directory: `ls ~/.ssh`
-    1. The `id_rsa` file is your private key. **Keep this file secret and safe on your computer**
-    2. The `id_rsa.pub` file is your public key. This is what you share with your Raspberry Pi.
-3. Take a look at your public key `cat ~/.ssh/id_rsa.pub`
-    1. It should look like `ssh-rsa <LONG STRING OF RANDOM CHARACTERS> user@host`
-4. Copy your public key to the Raspberry Pi `cat ~/.ssh/id_rsa.pub | ssh <USERNAME>@<IP-ADDRESS> 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'`
+    1. The `id_ed25519` file is your private key. **Keep this file secret and safe on your computer**
+    2. The `id_ed25519.pub` file is your public key. This is what you share with your Raspberry Pi.
+3. Take a look at your public key `cat ~/.ssh/id_ed25519.pub`
+    1. It should look like `ssh-ed25519 <LONG STRING OF RANDOM CHARACTERS> user@host`
+4. Copy your public key to the Raspberry Pi `cat ~/.ssh/id_ed25519.pub | ssh <USERNAME>@<IP-ADDRESS> 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'`
 5. Now try logging in `ssh rasp@raspberrypi.local` and you should connect without a password prompt.
