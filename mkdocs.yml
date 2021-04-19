@@ -13,3 +13,6 @@ theme:
     scheme: slate
     primary: pink
     accent: purple
+  font:
+    text: Fira Sans
+    code: Fira Code
